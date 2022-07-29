@@ -29,12 +29,16 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+
+    // 针对cpp进行编译时使用
     /*externalNativeBuild {
         cmake {
             path "CMakeLists.txt"
             version "3.10.2"
         }
     }*/
+
+    // 选择libs时使用
     sourceSets {
         main {
             jniLibs.srcDirs = ['libs','jniLibs']
